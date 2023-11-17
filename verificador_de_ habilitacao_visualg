@@ -1,0 +1,19 @@
+Algoritmo "virificador"
+
+Var
+   idade: real
+   habilitado: caractere 
+
+Inicio
+   escreval("qual a sua idade")
+   leia(idade)
+
+   escreval("você tem habilitacao? sim ou nao?")
+   leia(habilitado)
+   se (habilitado = "sim") e (idade >=18) entao
+      escreval("vocÊ pode ter habilitacao!!")
+   senao
+      escreval("voce nao pode ter habilitacao")
+   fimse
+
+Fimalgoritmo
