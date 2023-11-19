@@ -22,4 +22,4 @@ Inicio
    nsal <- sal + (sal * 18/ 100)
    fimescolha
    escreval("o funcionario com ", dep," de dependentes")
-   escreval("recebe R$", nsal)
+   escreval("recebe R$", nsal:5:2)
