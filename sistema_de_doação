@@ -1,0 +1,39 @@
+Algoritmo "doaçao"
+
+Var
+   d, valor : inteiro
+
+
+Inicio
+   escreval("---------------------------------")
+   escreval("  qual o valor que deseja doar?  ")
+   escreval("---------------------------------")
+   escreval("   muito obrigado pela ajuda!!   ")
+   escreval("[1] para doar R$10")
+   escreval("[2] para doar R$25")
+   escreval("[2] para doar R$50")
+   escreval("[4] para doar ourtros valores")
+   escreval("[5] para cancelar")
+   leia(d)
+   escolha d
+   caso 1
+      valor <- 10
+   caso 2
+      valor <- 25
+   caso 3
+      valor <- 50
+   caso 4
+      escreval("qual valor deseja doar??")
+      leia(valor)
+   caso 5
+      valor <- 0
+   fimescolha
+   se (valor = 0) entao
+   escreval("voce nao doou nada, mas obrigado pelo")
+   escreval("tempo quando puder é só voltar")
+   senao
+   escreval("-------------------")
+   escreval("voce doou R$", valor)
+   escreval("muito obrigado")
+   escreval("-------------------")
+   fimse
