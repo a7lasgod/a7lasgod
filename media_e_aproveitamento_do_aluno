@@ -1,0 +1,44 @@
+Algoritmo "notadoaluno"
+
+Var
+   N1, N2, media: real
+
+
+
+Inicio
+   escreval("---------------------")
+   escreval(" Escola de Guarulhos ")
+   escreval("---------------------")
+   escreval("primeira nota:")
+   leia(n1)
+   escreval("segunda nota:")
+   leia(n2)
+   escreval("---------------------")
+   media <- (n1 + n2) / 2
+   escreval("media: ", media)
+   se (media<= 10) e (media >9) entao
+      escreval("aproveitamento: A")
+   senao
+      se (media<= 9) e (media >8 ) entao
+         escreval("aproveitamento: B")
+      senao
+         se (media<= 8) e (media > 7) entao
+            escreval("aproveitamento: C")
+         senao
+            se (media<=7 ) e (media > 6) entao
+               escreval("aproveitamento: D")
+            senao
+               se (media<= 6) e (media > 5) entao
+                  escreval("aproveitamento: E")
+               senao
+                  se (media<5) entao
+                     escreval("aproveitamento: F")
+                  fimse
+               fimse
+            fimse
+         fimse
+      fimse
+   fimse
+
+
+Fimalgoritmo
