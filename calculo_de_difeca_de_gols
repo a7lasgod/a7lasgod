@@ -1,0 +1,35 @@
+Algoritmo "notadoaluno"
+
+Var
+   cor, pal, dif: inteiro
+   sts : caractere
+Inicio
+   escreval("-------------------------")
+   escreval(" corinthians e palmeiras" )
+   escreval("-------------------------")
+   escreval("quantos gols fez o corinthians")
+   leia(cor)
+   escreval("quantos gols fez o palmeiras")
+   leia(pal)
+   se (pal > cor) entao
+      dif <- pal - cor
+   senao
+      se (cor > pal) entao
+         dif <- cor - pal
+      fimse
+   fimse
+   escreval("diferenca:", dif)
+   se (dif >= 4) entao
+      sts <- "goleada"
+   senao
+      se (dif <=3) e (dif > 0) entao
+         sts <- "normal"
+      senao
+         sts <- "empate"
+      fimse
+   fimse
+   escreval("Status:",sts)
+
+
+
+Fimalgoritmo
