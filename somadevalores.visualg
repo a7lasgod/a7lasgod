@@ -1,0 +1,19 @@
+Algoritmo "somas"
+
+Var
+   n,m,valor,resp : inteiro
+
+Inicio
+   n <- 1
+
+    resp<- 0
+   enquanto (n <= 3) faca
+      escreval("digite o ", n ,"o valor")
+      leia(valor)
+
+      n <- n + 1
+      resp <- resp + valor
+   fimenquanto
+   escreval("soma: ", resp)
+
+Fimalgoritmo
