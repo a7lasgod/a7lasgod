@@ -1,0 +1,23 @@
+Algoritmo "contadorinteligente"
+
+Var
+   r,d,c: real
+
+Inicio
+  escreval("inicio:")
+  leia(d)
+  escreval("fim:")
+  leia(r)
+  c<- d
+   se (c <r) entao
+   enquanto (c <= r) faca
+   escreval("contador: ", c)
+   c <- c + 1
+   fimenquanto
+   senao
+   enquanto (c >= r) faca
+    escreval("contador: ", c)
+   c <- c - 1
+   fimenquanto
+   fimse
+Fimalgoritmo
