@@ -1,0 +1,27 @@
+Algoritmo "numeroprimo"
+
+Var
+   c,num,f,numpri: inteiro
+   r: caractere
+
+Inicio
+   c <- 1
+   numpri <- 0
+   escreva("digite um numero:")
+   leia(num)
+   repita
+      escreval(c)
+      se (num % c = 0) entao
+         numpri <- numpri + 1
+      fimse
+      c <- c + 1
+   ate (c >5)
+   se (numpri = 2) entao
+   escreval("é um numro primo")
+   senao
+   escreval("nao é primo")
+   fimse
+
+
+
+Fimalgoritmo
