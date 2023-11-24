@@ -1,0 +1,27 @@
+Algoritmo "ssss"
+
+Var
+  alunos, cont: inteiro
+  nome, maiornome: caractere
+  nota,maiornota: real
+Inicio
+  escreval("melhor aluno")
+  escreval("------------")
+  escreval("quantos  alunos?")
+  leia(alunos)
+  cont <- 1
+  enquanto (cont <= alunos) faca
+  escreval("nome do aluno")
+  leia(nome)
+  escreval("qual a nota do(a) ", nome,":")
+  leia(nota)
+  se (nota > maiornota) entao
+  maiornota <- nota
+  maiornome <- nome
+  fimse
+  cont <- cont + 1
+  fimenquanto
+  escreval ("o aluno com maior nota é: ", maiornome," com uma nota de: ",maiornota:2:2 )
+  
+  
+Fimalgoritmo
