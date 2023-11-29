@@ -1,0 +1,32 @@
+Algoritmo "supercontadorl"
+
+Var
+  n,a: inteiro
+Inicio
+   escreval("----------")
+   escreval("|  menu  |")
+   escreval("----------")
+   escreval("|[1] para contar de 1 a 10|")
+   escreval("|[2] para contar de 10 a 1|")
+   escreval("|[3] sair                 |")
+   escreval("===========================")
+   leia(a)
+   escolha a
+   caso 1
+   n <- 1
+   repita
+   escreva(n,"...")
+   n <- n + 1
+   ate (n > 10)
+   caso 2
+   n <- 10
+   repita
+   escreva(n,"...")
+   n <- n - 1
+   ate (n < 1)
+   caso 3
+   escreval("fim...")
+   fimescolha
+
+
+Fimalgoritmo
