@@ -1,0 +1,40 @@
+Algoritmo "listagem de turma"
+
+Var
+nome: vetor [1..2] de caractere
+n1: vetor [1..2] de real
+n2: vetor [1..2] de real
+m: vetor [1..2] de real
+i,tot:inteiro
+sm,mt: real
+
+
+Inicio
+para i <- 1 ate 2 faca
+escreva("nome:")
+leia(nome[i])
+escreva("nota 1:")
+leia(n1[i])
+escreva("nota 2: ")
+leia(n2[i])
+m[i] <- (n1[i]+ n2[i])/ 2
+sm<- sm + m[i]
+fimpara
+mt <- sm/2
+limpatela
+escreval("panel dos alunos")
+escreval("-----------------")
+para i <- 1 ate 2 faca
+escrevaL(nome[i]: 15,m[i])
+escreval("------------------------------")
+fimpara
+para i <- 1 ate 2 faca
+se (m[i] > mt) entao
+tot <- tot + 1
+fimse
+fimpara
+escreval(tot, " alunos a cima da media que e:", mt:4:1)
+
+
+
+Fimalgoritmo
