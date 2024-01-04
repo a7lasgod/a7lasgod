@@ -1,0 +1,27 @@
+Algoritmo "nomes com a letra c"
+
+Var
+i,tot: inteiro
+nome: caractere
+soc: vetor [1..4] de caractere
+
+Inicio
+tot <- 0
+para i <- 1 ate 4 faca
+escreva("nomes:")
+leia(nome)
+se (copia(nome,1,1) = "c") entao
+tot <- tot + 1
+soc[tot] <- nome
+fimse
+fimpara
+limpatela
+escreval("listagem final")
+para i <- 1 ate  tot faca
+escreval(soc[i])
+fimpara
+
+
+
+
+Fimalgoritmo
