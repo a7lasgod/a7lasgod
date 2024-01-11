@@ -1,0 +1,38 @@
+Algoritmo "maior numero da terceira coluna"
+
+Var
+   m: vetor[1..4, 1..4] de inteiro
+   i,j,s,soma,c,mai3c: inteiro
+Inicio
+soma<- 1
+   para i <- 1 ate 4 faca
+      para j <- 1 ate 4 faca
+         escreva("digite o valor na posicao[", i, ",",j , "]: ")
+         leia(m[i,j])
+         se (i = j) entao
+         s <- s + m[i,j]
+         fimse
+       fimpara
+   fimpara
+   para i <- 1 ate 4 faca
+   para j <- 1 ate 4 faca
+   escreva(m[i,j])
+   fimpara
+   escreval()
+   fimpara
+   para c <- 1 ate 4 faca
+   soma <- soma * m[2,c]
+   fimpara
+   para c <- 1 ate 4 faca
+     se (m[i,3] > mai3c) entao
+      mai3c <- m[i,3]
+      fimse
+   
+   fimpara
+
+   
+   escreval("soma dos valores: ",s)
+   escreval("soma dos valores da segunda linha", soma)
+   escreval("o maior numero da coluna 3 é: ", mai3c)
+
+Fimalgoritmo
